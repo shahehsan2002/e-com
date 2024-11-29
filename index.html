@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>E-com</title>
-</head>
-<body>
-    <h1 class="text-3xl font-bold bg-red-500 text-slate-900 text-center">hello</h1>
-</body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+      .inter-font {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="inter-font">
+    <!-- Navbar -->
+    <div class="max-w-7xl py-5 bg-slate-50 mx-auto">
+      <nav class="flex justify-between items-center">
+        <!-- logo -->
+        <div class="logo flex items-center">
+          <h1 class="text-3xl"><span class="text-[#FC6320]">e</span>Com</h1>
+          <img src="./logo.png" alt="" />
+        </div>
+        <!-- menu -->
+        <div class="menuItems">
+          <ul class="flex gap-5">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>Add Products</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <!-- social media -->
+        <div class="social-media">
+          <ul class="flex gap-5">
+            <li>
+              <a href="#"><img src="./fb.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./ig.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./x.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </body>
 </html>

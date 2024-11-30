@@ -15,26 +15,46 @@
       }
     </style>
   </head>
-  <body class="inter-font">
+  <body class="inter-font px-3">
     <!-- Navbar -->
-    <div class="max-w-7xl py-5 bg-slate-50 mx-auto">
+    <div class="max-w-7xl mt-3 md:mt-7 lg:m-5 mx-auto">
       <nav class="flex justify-between items-center">
         <!-- logo -->
         <div class="logo flex items-center">
           <h1 class="text-3xl"><span class="text-[#FC6320]">e</span>Com</h1>
           <img src="./logo.png" alt="" />
         </div>
+        <div class="hamburger-icon md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
         <!-- menu -->
-        <div class="menuItems">
+        <div class="menuItems hidden md:block">
           <ul class="flex gap-5">
-            <li>Home</li>
+            <li
+              class="bg-[#FC63202] border border-rounde-lgd border-[#FC632026] text-[#FC6320]"
+            >
+              Home
+            </li>
             <li>Shop</li>
             <li>Add Products</li>
             <li>Contact</li>
           </ul>
         </div>
         <!-- social media -->
-        <div class="social-media">
+        <div class="social-media hidden md:block">
           <ul class="flex gap-5">
             <li>
               <a href="#"><img src="./fb.png" alt="" /></a>
